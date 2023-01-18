@@ -1,0 +1,62 @@
+.features-list__heading {
+  @include display;
+  margin-bottom: 10px;
+  @extend %heading-secondary;
+}
+.features-list__text {
+  color: $main-text;
+  font-size: 14px;
+  line-height: 1.7;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+}
+.features__container {
+  @extend %container;
+}
+.features {
+  padding: 60px 0px;
+    @media (min-width: $desktop) {
+      padding: 94px 0px;
+    }
+}
+.features-list {
+  @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+  }
+}
+.features-list__element {
+  @media (max-width: $tablet) {
+  min-width: 450px;
+  
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .features-list__element {
+    width: 354px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features-list__element {
+    width: 270px;
+  }
+}
+.features-list__icon {
+  @include display;
+
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $additional-grey;
+  border-radius: 4px;
+
+}
