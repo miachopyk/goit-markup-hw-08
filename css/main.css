@@ -43,11 +43,20 @@ button {
 }
 
 .footer__container, .clients__container, .team__container, .about__container, .features__container, .hero__container, .header__container {
-  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 768px) {
+  .footer__container, .clients__container, .team__container, .about__container, .features__container, .hero__container, .header__container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__container, .clients__container, .team__container, .about__container, .features__container, .hero__container, .header__container {
+    width: 768px;
+  }
 }
 @media (min-width: 1200px) {
   .footer__container, .clients__container, .team__container, .about__container, .features__container, .hero__container, .header__container {
@@ -610,8 +619,18 @@ button {
     gap: 70px;
   }
 }
-.footer-address {
-  margin-bottom: 60px;
+@media (max-width: 768px) {
+  .footer-info {
+    margin-bottom: 60px;
+  }
+  .join {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer__group {
+    margin-bottom: 60px;
+  }
 }
 @media (min-width: 1200px) {
   .footer-address {
@@ -650,10 +669,6 @@ button {
 
 .footer-address__details:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.join {
-  padding-bottom: 60px;
 }
 
 .join__heading {

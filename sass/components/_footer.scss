@@ -29,9 +29,20 @@
     gap: 70px;
   }
 }
+@media (max-width: $tablet) {
+  .footer-info {
+    margin-bottom: 60px;
+  }
+  .join {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .footer__group {
+    margin-bottom: 60px;
+  }
+}
 .footer-address {
-  margin-bottom: 60px;
-
   @media (min-width: $desktop) {
     margin-bottom: 0;
   }
@@ -59,12 +70,7 @@
 .footer-address__details:not(:last-child) {
   margin-bottom: 9px;
 }
-.join {
-  padding-bottom: 60px;
-  // padding-top: 12px;
-  // margin-right: 93px;
 
-}
 .join__heading {
   @media (max-width: $desktop) {
     @include display;
